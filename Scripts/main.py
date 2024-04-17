@@ -4,15 +4,11 @@ import os
 import datetime
 
 
-
-
-
 def generate_container(img=None, btns_color=ft.colors.RED_50, containers_width=100, 
-                       containers_height = 100,  ):
+                       containers_height = 100):
     if img:
         data_path = os.path.join(os.getcwd(), 'img')
         img_container = ft.Image(data_path+'//'+img, height=80, width=80, fit=ft.ImageFit.CONTAIN)
-
 
         return ft.Container(
         img_container, 
